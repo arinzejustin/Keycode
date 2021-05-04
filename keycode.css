@@ -1,0 +1,105 @@
+*{
+			padding: 0;
+			margin: 0
+}
+html {
+  text-align: center;
+  font-family: 'Oswald';
+  line-height: 1.4;
+  font-size: 25px;
+  color: #FFF;
+}
+a,
+a:focus {
+	text-decoration: none;
+}
+main {
+	background: rgba(0 0 0 / 40%);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+}
+.list {
+	top: -30%;
+	position: absolute;
+	background: rgba(0 0 0 / 50%);
+	color: #FFFF;
+	padding: 14px 20px; 
+}
+.show{
+	top: 30px;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	z-index: 1000;
+}
+.holder {
+	margin-top: 15%;
+}
+#click {
+	text-shadow: 2px 5px 5px rgba( 0 0 0 / 50%);
+	color: Aqua;
+}
+  #box-holder {
+    display: flex;
+    flex-direction: row;
+    margin: 4% 0 0 3%
+  }
+  #box-holder > .box {
+    margin: 10px 10px;
+    color: #000;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #4ee;
+    padding: 10px 40px;
+    background: rgba(0 0 0 / 80%);
+  }
+    #box-holder > .box:hover{
+    box-shadow: 0px 10px 10px rgba(0 0 0 / 30%);
+    transition: .65s all;
+  }
+  strong {
+    padding: 5px 20px;
+    font-size: 25px;
+    color: lime;
+  }
+  .box p {
+     font-size: 50px;
+     color: #FFF;
+  }
+  #contact {
+  	position: fixed;
+  	bottom: 5px;
+  	right: 10px;
+  	font-size: 15px;
+  	color: silver;
+  }
+@media(min-width:350px) and (max-width:767px) {
+ #box-holder > .box {
+    margin: 10px 3px !important;
+    padding: 10px 10px !important;
+  }
+    strong {
+    padding: 5px 10px;
+    font-size: 18px;
+    color: lime;
+  }  #box-holder {
+    display: flex;
+    flex-direction: column;
+    margin: 4% 0 0 3%
+  }
+  }
+  @media(min-width:1000px) and (max-width:1170px) {
+ #box-holder > .box {
+    margin: 10px 10px !important;
+    padding: 10px 20px !important;
+  }
+    strong {
+    padding: 5px 20px;
+    font-size: 25px;
+    font-weight: 500;
+  }  #box-holder {
+    display: flex;
+    flex-direction: row;
+    margin: 4% 0 0 2%;
+  }
+  }
